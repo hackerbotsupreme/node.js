@@ -1,0 +1,95 @@
+// topic- import , export challenge 
+
+// files used main.jsx
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import {add} from './Calc';
+
+// import mul from './Calc';
+// import sub from './Calc';
+// import div from './Calc';
+
+// import Main from './Main';
+// // import skf from './Calc';
+// // <li>{add(40,4)}</li>
+// ReactDOM.render(
+//     <Main/>,
+//     document.getElementById('root')
+// )
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// video 22 and 23 and 24
+// topic - props in rreact js , react js project 
+
+
+// files used Card.jsx,index.css,sdate.jsx
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+// function names and component names  always starts witj capital letter 
+// theh Card is our element 
+// function Card(props) {
+//     console.log(props)
+//     return (
+//         <React.Fragment>
+//             <div className='cards'>
+//                 <div className='card'>
+//                     <img src={props.imgsrc} height='600px' alt='myPic' className='card_img' />
+//                     <div className='card__info'>
+//                         <span className='card__category'>{props.title}</span>
+//                         <h3 className='card__title'>{props.sname} </h3>
+//                         <a href={props.link} target='_blank'>
+//                             <button>  Watch Now </button>
+//                         </a>
+//                     </div>
+//                 </div>
+//             </div>
+//         </React.Fragment>
+//     );
+// }
+import Card from './Card';
+import './index.css';
+import Sdata from './Sdata';
+
+// console.log(Sdata[0].sname)
+ReactDOM.render(
+    <React.Fragment>
+
+        <h1 className='heading-style'>List of top 3 netflix series</h1>
+        <Card
+        // card is taking it as a property that s why styles dont work 
+        className="first"
+            imgsrc={Sdata[0].imgsrc}
+            title={Sdata[0].sname}
+            sname={Sdata[0].title}
+            link={Sdata[0].links}
+        // imgsrc="https://cdn.wallpapersafari.com/95/42/xfONpY.jpg"
+        // title="A NetFlix Original Series "
+        // sname="Dark"
+        // link="https://www.netflix.com/in/title/80100172"
+        />,
+        <Card
+            imgsrc={Sdata[1].imgsrc}
+            title={Sdata[1].sname}
+            sname={Sdata[1].title}
+            link={Sdata[1].links}
+        // imgsrc="https://w0.peakpx.com/wallpaper/71/926/HD-wallpaper-women-art-beauty-feminism-she-woman-womenpower-thumbnail.jpg"
+        // title="A NetFlix Original Series "
+        // sname="SHe"
+        // link="https://www.netflix.com/in/title/80100172"
+        />,
+        <Card
+            imgsrc={Sdata[2].imgsrc}
+            title={Sdata[2].sname}
+            sname={Sdata[2].title}
+            link={Sdata[2].links}
+        // imgsrc="https://wallpapercave.com/wp/wp7418550.jpg"
+        // title="A NetFlix Original Series "
+        // sname="Extra Curricular"
+        // link="https://www.netflix.com/in/title/80100172"
+        />,
+    </React.Fragment>,
+    document.getElementById('root')
+)

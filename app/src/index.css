@@ -1,34 +1,35 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.heading{
+/* /----------------------------------------------------- */
+/* .heading {
   background-color: aqua;
   color: red;
   font-size: 70px;
   text-decoration: underline;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
+} */
+/* /----------------------------------------------------- */
+/* 
+body {
+  background-color: aquamarine;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  font-family: "Satisfy", cursive;
 }
 
-body{
-    background-color: aquamarine;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0%;
-    font-family:'Satisfy', cursive;
-}
-
-div{
+div {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -36,12 +37,98 @@ div{
   align-items: center;
   margin-top: -30px;
 }
-h1{
+h1 {
   padding: 20px 20px;
   background-color: yellow;
   color: red;
   border-radius: 20px;
 }
-span{
+span {
   color: pink;
+} */
+
+/* /----------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
 }
+.heading-style {
+  padding: 30px 0;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: rgb(167, 202, 232);
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+}
+.card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 21.25%;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  float: left;
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+.card__img {
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card__info {
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  background-color: #fff;
+}
+.card__category {
+  font-family: sans-serif;
+  text-decoration: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: rgb(58, 46, 46);
+  background-color: #fff;
+}
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+button{
+  padding: 5px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: rgb(58, 46, 46);
+  outline: none;
+  border: 1px solid black;
+}
+/* this wonk work as the styles are alrady reservved */
+.first{
+  color: red;
+  background-color: yellow;
+}
+/* /----------------------------------------------------- */
+/* /----------------------------------------------------- */
