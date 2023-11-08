@@ -1,0 +1,20 @@
+Run create-react-app --help to see all options.
+PS C:\Users\rekha\OneDrive\Desktop\(38-41)react-js-thapa-technical> npm install -g create-react-app
+npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+
+changed 67 packages in 9s
+
+5 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\rekha\OneDrive\Desktop\(38-41)react-js-thapa-technical> create-react-app --version
+5.0.1
+PS C:\Users\rekha\OneDrive\Desktop\(38-41)react-js-thapa-technical> 
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+PS C:\Users\rekha\OneDrive\Desktop\(38-41)react-js-thapa-technical\react-setup> npm start
+will not work , go inside the app(create-react-app projectname)
+with cd projectname
+then npm start this will work 
+
+///////////////////////////////////////////////////////////////////////////////////////
